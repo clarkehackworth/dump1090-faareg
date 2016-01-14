@@ -9,12 +9,13 @@ Before use you will need to download and import the FAA aircraft registration da
 Then use the --follow option and pipe raw dump1090 data into stdin.
 
 Sample output:
-Manufacturer                   Model                Owner                                    ICAO       N Number   Serial
+`Manufacturer                   Model                Owner                                    ICAO       N Number   Serial
 CESSNA                         560                  M AIRE LLC                               A68***     5****      5****
 BOEING                         737-3H4              SOUTHWEST AIRLINES CO                    A3E***     3****      2****
 BOMBARDIER INC                 CL-600-2C10          EXPRESSJET AIRLINES INC                  AA0***     7****      1****
 BOEING                         737-8H4              SOUTHWEST AIRLINES CO                    AB5***     8****      3****
 BOEING                         767-316F             CHIRIHUE LEASING TRUST                   A90***     6****      3****
+`
 
 Usage:
 dump1090-faareg.py
