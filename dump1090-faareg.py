@@ -38,6 +38,8 @@ def follow():
    try:
       con = lite.connect('aircraft.db')
       with con:
+         
+         # we use icaoList to hold the most recent ICAOs so we don't keep reprinting the same data each time it shows up in dump1090 data.
          icaoList = []
          line = ''
 
@@ -74,6 +76,7 @@ def follow():
 
                   print '{:30s} {:20s} {:40s} {:10s} {:10s} {:10s}'.format(planeData[1],planeData[2],masterData[6],icao,masterData[0],masterData[1])
 
+                  # if you are seeing more than 25 planes at once change the number below to a higher number
                   if len(icaoList) > 25:
                      icaoList.pop()
                else:
