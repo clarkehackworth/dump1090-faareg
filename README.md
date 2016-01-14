@@ -20,6 +20,7 @@ BOEING                         767-316F             CHIRIHUE LEASING TRUST      
 ```
 
 Usage:
+```
 dump1090-faareg.py
  --import <FAA data dir>
       provide path to unzipped FAA registry data
@@ -27,3 +28,4 @@ dump1090-faareg.py
       zip can be found here: http://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry/releasable_aircraft_download/
  --follow
       pipe in raw (csv) data from dump1090 raw
+```
